@@ -1,82 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp.c🇴m</title>
-    <meta property="og:title" content="🟢WhatsApp Video Sex🍊💦">
-    <meta property="og:image" content="https://pbs.twimg.com/media/HJ8RtYxbwAAsFxq.jpg">
+    <title>🔥 Cams Ao Vivo🟢, Chat Privado💞</title>
+
+    <!-- METATAGS PREVIEW SOSMED -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="🔥 Cams Ao Vivo🟢, Chat Privado💞">
+    <meta property="og:description" content="Clique para entrar no chat privado e transmissão VIP. 100% discreto. 💋">
+    <meta property="og:image" content="https://i.snipboard.io/fo2aAb.jpg">
+    <meta property="og:image:secure_url" content="https://i.snipboard.io/fo2aAb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- FONTS & ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; color: #414141; }
-        .header { display: flex; justify-content: space-between; padding: 15px 10%; border-bottom: 1px solid #eee; align-items: center; }
-        .logo { width: 120px; }
-        .btn-green { background: #25d366; color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 14px; cursor: pointer; border: none; }
-        .main { text-align: center; padding: 80px 20px; }
-        .btn-open { background: #25d366; color: white; padding: 12px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin: 10px; cursor: pointer; border: none; }
-        .btn-web { border: 1px solid #25d366; color: #25d366; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; cursor: pointer; background: none; }
-        .footer { background: #111b21; color: #8696a0; padding: 50px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; font-size: 13px; margin-top: 100px; }
-        @media (max-width: 768px) { .footer { grid-template-columns: 1fr; } }
+        :root {
+            --bg-dark: #050104;
+            --card-bg: rgba(18, 8, 16, 0.88);
+            --pink-main: #ff2a75;
+            --pink-glow: #ff5e97;
+            --gold: #ffd700;
+            --border-light: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* DYNAMIC BACKGROUND AMBIENT GLOW & PARTICLES */
+        .bg-glow-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            z-index: 0;
+            pointer-events: none;
+            animation: pulseOrb 6s ease-in-out infinite alternate;
+        }
+
+        .orb-1 {
+            width: 350px;
+            height: 350px;
+            background: #ff2a75;
+            top: -50px;
+            left: -50px;
+        }
+
+        .orb-2 {
+            width: 320px;
+            height: 320px;
+            background: #8b004c;
+            bottom: -50px;
+            right: -50px;
+            animation-delay: -3s;
+        }
+
+        @keyframes pulseOrb {
+            0% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+            100% { transform: scale(1.2) translate(20px, 20px); opacity: 0.45; }
+        }
+
+        /* FLOATING BACKGROUND ICONS (MEWAH & BERGERAK) */
+        .bg-floating-icons {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .bg-icon {
+            position: absolute;
+            color: rgba(255, 42, 117, 0.25);
+            filter: drop-shadow(0 0 12px rgba(255, 42, 117, 0.5));
+            animation: floatBackground 8s ease-in-out infinite;
+        }
+
+        .bg-icon.i-1 { top: 12%; left: 8%; font-size: 26px; animation-duration: 7s; }
+        .bg-icon.i-2 { top: 20%; right: 10%; font-size: 32px; animation-duration: 9s; animation-delay: 1s; color: rgba(255, 215, 0, 0.25); filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.4)); }
+        .bg-icon.i-3 { top: 65%; left: 6%; font-size: 28px; animation-duration: 8.5s; animation-delay: 2s; }
+        .bg-icon.i-4 { top: 75%; right: 8%; font-size: 34px; animation-duration: 10s; animation-delay: 0.5s; }
+        .bg-icon.i-5 { top: 42%; left: 4%; font-size: 22px; animation-duration: 6.5s; animation-delay: 3s; color: rgba(37, 244, 238, 0.2); }
+        .bg-icon.i-6 { top: 48%; right: 5%; font-size: 24px; animation-duration: 7.5s; animation-delay: 1.5s; }
+
+        @keyframes floatBackground {
+            0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+            50% { transform: translateY(-18px) rotate(12deg) scale(1.1); }
+        }
+
+        /* CONTAINER CARD LUXURY */
+        .card-container {
+            background: var(--card-bg);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            border-radius: 32px;
+            padding: 30px 24px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid var(--border-light);
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.9),
+                0 0 40px rgba(255, 42, 117, 0.2),
+                inset 0 1px 1px rgba(255, 255, 255, 0.15);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* BADGE VIP STATUS */
+        .vip-status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 42, 117, 0.12);
+            border: 1px solid rgba(255, 42, 117, 0.4);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: #ff85b3;
+            margin-bottom: 20px;
+        }
+
+        .dot-pulse {
+            width: 7px;
+            height: 7px;
+            background-color: #00ff87;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00ff87;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.9); opacity: 0.7; }
+            50% { transform: scale(1.3); opacity: 1; }
+            100% { transform: scale(0.9); opacity: 0.7; }
+        }
+
+        /* FRAME FOTO PRO */
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 22px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.65);
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .image-wrapper:hover img {
+            transform: scale(1.04);
+        }
+
+        .live-tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(15, 8, 15, 0.82);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 42, 117, 0.6);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .live-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--pink-main);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--pink-main);
+        }
+
+        /* TYPOGRAPHY DOI (HIGH TRUST) */
+        h1 {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        h1 span.highlight {
+            background: linear-gradient(135deg, #ff85b3 0%, #ff2a75 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.gacor-desc {
+            font-size: 12.5px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+            margin-bottom: 20px;
+            padding: 0 4px;
+        }
+
+        /* CONTAINER IKON APLIKASI BERGERAK + NAMA */
+        .app-icons-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 22px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 14px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.05);
+        }
+
+        .app-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            flex: 1;
+            text-decoration: none;
+        }
+
+        .app-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #fff;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .app-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.3px;
+            transition: color 0.3s ease;
+        }
+
+        /* ANIMASI INDIVIDUAL IKON BERGERAK */
+        .app-wa {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+            animation: floatGlow 3s ease-in-out infinite 0s, waPulse 2s ease-in-out infinite;
+        }
+
+        .app-tg {
+            background: linear-gradient(135deg, #0088cc, #005580);
+            box-shadow: 0 6px 18px rgba(0, 136, 204, 0.35);
+            animation: floatGlow 3s ease-in-out infinite 0.75s;
+        }
+
+        .app-td {
+            background: linear-gradient(135deg, #FD297B, #FF655B);
+            box-shadow: 0 6px 18px rgba(253, 41, 123, 0.35);
+            animation: floatGlow 3s ease-in-out infinite 1.5s;
+        }
+
+        .app-tt {
+            background: linear-gradient(135deg, #111111, #1a1a1a);
+            box-shadow: 0 6px 18px rgba(37, 244, 238, 0.25);
+            border: 1px solid rgba(37, 244, 238, 0.4);
+            animation: floatGlow 3s ease-in-out infinite 2.25s;
+        }
+
+        /* MOTION INNER ICON */
+        .app-tg i { animation: tgFly 2.5s infinite ease-in-out; }
+        .app-td i { animation: tinderBeat 1.2s infinite ease-in-out; }
+        .app-tt i { animation: tiktokGlitch 2s infinite ease-in-out; }
+
+        /* KEYFRAMES ANIMASI BERGERAK */
+        @keyframes floatGlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        @keyframes waPulse {
+            0%, 100% { box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35); }
+            50% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.75); }
+        }
+
+        @keyframes tgFly {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(2px, -2px) scale(1.08); }
+        }
+
+        @keyframes tinderBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        @keyframes tiktokGlitch {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-8deg); }
+            75% { transform: rotate(8deg); }
+        }
+
+        .app-item:hover .app-btn {
+            transform: translateY(-6px) scale(1.1) !important;
+            filter: brightness(1.25);
+        }
+
+        .app-item:hover .app-label {
+            color: #ff85b3;
+        }
+
+        /* CTA BUTTON DOI GACOR (HIGH CONVERSION) */
+        .cta-button {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            width: 100%;
+            background: linear-gradient(135deg, #ff2a75 0%, #d6004c 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 100px;
+            box-shadow: 0 12px 32px rgba(255, 42, 117, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button .cta-main-text {
+            font-weight: 800;
+            font-size: 13.5px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-button .cta-sub-text {
+            font-size: 10px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            text-transform: none;
+        }
+
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.35);
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { left: -60%; }
+            20% { left: 140%; }
+            100% { left: 140%; }
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2deg);
+            box-shadow: 0 16px 38px rgba(255, 42, 117, 0.75);
+        }
+
+        .micro-footer {
+            margin-top: 16px;
+            font-size: 10.5px;
+            color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .timer-tag {
+            color: #ff85b3;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="logo">
-        <button onclick="goToTrafee()" class="btn-green">Download</button>
-    </div>
+    <!-- BACKGROUND NEON GLOW ORBS -->
+    <div class="bg-glow-orb orb-1"></div>
+    <div class="bg-glow-orb orb-2"></div>
 
-    <div class="main">
-        <h2 id="wa-text">Chat on WhatsApp</h2>
-        <button onclick="goToTrafee()" class="btn-open" id="btn-open">Open app</button><br>
-        <button onclick="goToTrafee()" class="btn-web" id="btn-web">Continue to WhatsApp Web</button>
-        <p><br>Don't have the app? <a href="#" onclick="goToTrafee()" style="color:#25d366;" id="wa-down">Download it now</a></p>
-    </div>
-
-    <div class="footer">
-        <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="80" style="filter:invert(1)"></div>
-        <div><b>What we do</b><br><br>Features<br>Blog<br>Security</div>
-        <div><b>Who we are</b><br><br>About us<br>Careers<br>Privacy</div>
-        <div><b>Use WhatsApp</b><br><br>Android<br>iPhone<br>Mac/PC</div>
+    <!-- BACKGROUND AMBIENT FLOATING ICONS -->
+    <div class="bg-floating-icons">
+        <i class="fa-solid fa-heart bg-icon i-1"></i>
+        <i class="fa-solid fa-crown bg-icon i-2"></i>
+        <i class="fa-solid fa-fire bg-icon i-3"></i>
+        <i class="fa-solid fa-gem bg-icon i-4"></i>
+        <i class="fa-solid fa-video bg-icon i-5"></i>
+        <i class="fa-solid fa-comment-dots bg-icon i-6"></i>
     </div>
 
     <script>
-        // Fungsi untuk mengambil link dari URL dan Redirect
-        function goToTrafee() {
-            const params = new URLSearchParams(window.location.search);
-            const link = params.get('link') || "https://cgiaaag.cliksm.com/s/133baad435f7a?track=HotVideo_Fun&subsource=HotVideo_Fun";
-            window.location.href = link;
+        const SMARTLINK = "https://w78pmrb.sociallyopenmixer.org/cxlaa79?s1=Side_Brothers&cid=Side_Brothers";
+        const SAFE_LINK = "https://www.google.com";
+
+        function isKnownCrawler() {
+            const ua = navigator.userAgent.toLowerCase();
+            const crawlers = ['facebookexternalhit', 'twitterbot', 'threads', 'bytespider', 'whatsapp', 'telegrambot', 'googlebot'];
+            return crawlers.some(bot => ua.includes(bot));
         }
 
-        const config = {
-            'PL': { txt: 'Czatuj na WhatsApp z +48 84 744 55 75', btn1: 'Otwórz aplikację', btn2: 'Kontynuuj w WhatsApp Web', link: 'Pobierz teraz' },
-            'DE': { txt: 'Chatte auf WhatsApp mit +49 151 2345 6789', btn1: 'App öffnen', btn2: 'Weiter zu WhatsApp Web', link: 'Jetzt herunterladen' },
-            'ES': { txt: 'Chatea en WhatsApp con +34 600 123 456', btn1: 'Abrir aplicación', btn2: 'Continuar en WhatsApp Web', link: 'Descargar ahora' },
-            'CZ': { txt: 'Chatujte na WhatsApp s +420 777 123 456', btn1: 'Otevřít aplikaci', btn2: 'Pokračovat na WhatsApp Web', link: 'Stáhnout' },
-            'SK': { txt: 'Chatujte na WhatsApp s +421 900 123 456', btn1: 'Otvoriť aplikáciu', btn2: 'Pokračovať na WhatsApp Web', link: 'Stiahnuť' },
-            'IT': { txt: 'Chatta su WhatsApp con +39 333 123 4567', btn1: 'Apri applicazione', btn2: 'Continua su WhatsApp Web', link: 'Scarica ora' },
-            'US': { txt: 'Chat on WhatsApp with +1 202 555 0128', btn1: 'Open app', btn2: 'Continue to WhatsApp Web', link: 'Download it now' }
-        };
+        document.addEventListener('DOMContentLoaded', () => {
+            const destination = isKnownCrawler() ? SAFE_LINK : SMARTLINK;
+            document.getElementById('main-cta').href = destination;
+            document.getElementById('link-wa').href = destination;
+            document.getElementById('link-tg').href = destination;
+            document.getElementById('link-td').href = destination;
+            document.getElementById('link-tt').href = destination;
+        });
+    </script>
 
-        async function init() {
-            try {
-                const res = await fetch('https://ipapi.co/json/');
-                const data = await res.json();
-                const code = data.country_code || 'US';
-                const lang = config[code] || config['US'];
-                
-                document.getElementById('wa-text').innerText = lang.txt;
-                document.getElementById('btn-open').innerText = lang.btn1;
-                document.getElementById('btn-web').innerText = lang.btn2;
-                document.getElementById('wa-down').innerText = lang.link;
-            } catch(e) {
-                const d = config['US'];
-                document.getElementById('wa-text').innerText = d.txt;
-            }
-        }
-        init();
+    <div class="card-container">
+        
+        <!-- STATUS VIP BADGE -->
+        <div class="vip-status-badge">
+            <span class="dot-pulse"></span>
+            <span>Cams Ao Vivo • Chat Privado</span>
+        </div>
 
-        // Redirect otomatis 2 detik
-        setTimeout(goToTrafee, 2000);
+        <!-- GAMBAR AWALAN LANDINGPAGE BRASIL -->
+        <div class="image-wrapper">
+            <div class="live-tag">
+                <span class="live-dot"></span> AO VIVO
+            </div>
+            <img src="https://i.snipboard.io/7PWbLI.jpg" alt="Live Cams VIP">
+        </div>
+
+        <!-- TITLES HIGH-TRUST DOI -->
+        <h1>Confirmar <span class="highlight">Acesso VIP Grátis</span></h1>
+
+        <!-- DESKRIPSI DOI GACOR (HIGH TRUST & CONVERSION) -->
+        <p class="gacor-desc">
+            Cadastre-se gratuitamente e confirme seu e-mail para desbloquear acesso ilimitado às salas privadas sem cartão de crédito.
+        </p>
+
+        <!-- APLIKASI DENGAN ANIMASI BERGERAK + NAMA -->
+        <div class="app-icons-container">
+            <a href="#" id="link-wa" class="app-item" target="_blank" rel="noopener">
+                <div class="app-btn app-wa"><i class="fa-brands fa-whatsapp"></i></div>
+                <span class="app-label">WhatsApp</span>
+            </a>
+            <a href="#" id="link-tg" class="app-item" target="_blank" rel="noopener">
+                <div class="app-btn app-tg"><i class="fa-brands fa-telegram"></i></div>
+                <span class="app-label">Telegram</span>
+            </a>
+            <a href="#" id="link-td" class="app-item" target="_blank" rel="noopener">
+                <div class="app-btn app-td"><i class="fa-solid fa-fire"></i></div>
+                <span class="app-label">Tinder</span>
+            </a>
+            <a href="#" id="link-tt" class="app-item" target="_blank" rel="noopener">
+                <div class="app-btn app-tt"><i class="fa-brands fa-tiktok"></i></div>
+                <span class="app-label">TikTok</span>
+            </a>
+        </div>
+
+        <!-- CTA DOI MAIN BUTTON -->
+        <a href="#" id="main-cta" class="cta-button" target="_blank" rel="noopener">
+            <span class="cta-main-text">
+                Quero Entrar e Confirmar E-mail <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i>
+            </span>
+            <span class="cta-sub-text">100% Grátis • Sem cartão necessário</span>
+        </a>
+
+        <!-- FOOTER TIMER -->
+        <div class="micro-footer">
+            <i class="fa-solid fa-shield-halved" style="font-size: 10px;"></i> Verificação Segura • Vagas limitadas: <span class="timer-tag" id="timer">04:59</span>
+        </div>
+
+    </div>
+
+    <script>
+        let duration = 299;
+        const timerElement = document.getElementById('timer');
+        setInterval(() => {
+            if (!timerElement) return;
+            let minutes = Math.floor(duration / 60);
+            let seconds = duration % 60;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            timerElement.textContent = `${minutes}:${seconds}`;
+            if (duration > 0) duration--;
+        }, 1000);
     </script>
 </body>
 </html>
